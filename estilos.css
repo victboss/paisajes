@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* --------------------------------- reseteo -------------------------------- */
+
+main{
+    height: 600px;
+    width: 100%;
+    background-image: url(/multimedia/campos.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: orange;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 5px black;
+
+}
+header span{
+    color: green;
+}
+header i{
+    color: green;
+    cursor: pointer;
+}
+
+.call{
+    color: white;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.363);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    height: 350px;
+    margin: 20px;
+    border-radius: 5px;
+    border:3px solid orange;
+}
+.call h1{
+    color:orange;
+}
+.call p{
+    margin-bottom: 30px;
+}
+.call a{
+    background-color: orange;
+    color:black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+h2{
+    text-align: center;
+    background-color: orange;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    color: yellow;
+    text-shadow: 2px 2px 5px black;
+    text-transform: capitalize;
+}
+
+/* ----------------------------------- titulo ----------------------------------- */
+.seccion{
+    width: 100%;
+    min-height: 450px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nleft{
+    background-image: url(/multimedia/sunset.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+}
+.nright{
+    width:100%;
+    min-height: 450px;
+    padding: 30px;
+    background-color: orange;
+
+}
+.nright h3{
+    text-align: left;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+.nright p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* --------------------------------- section -------------------------------- */
+.galeria{
+    width: 100%;
+    height: auto;
+    background-color: orange;
+    background-image: linear-gradient(orange, green);
+    padding: 20px;
+    /*min-height: 100vh;*/
+}
+
+.item{
+    height: 200px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    transition: all 0.9s;
+    box-shadow: 2px 2px 5px black;
+}
+.item1{
+    background-image: url(/multimedia/salar\ uyuni\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+    
+.item2{
+    background-image: url(/multimedia/pamukkale-1.jpg);
+    background-size: cover;
+    background-position: center;
+}    
+.item3{
+    background-image: url(/multimedia/Lagos-de-Plitvice1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+    
+.item4{
+    background-image: url(/multimedia/polinesia-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+    
+.item5{
+    background-image: url(/multimedia/bahia-de-halong1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+    
+.item6{
+    background-image: url(/multimedia/torres-del-paine-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+    
+.item7{
+    background-image: url(/multimedia/canada1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+    
+.item8{
+    background-image: url(/multimedia/cataratas-victoria1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* --------------------------------- GALERIA -------------------------------- */
+
+footer{
+    background-color: black;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer p{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+}
+footer i{
+    font-size: 40px;
+    letter-spacing: 20px;
+    color: green;
+}
+/* --------------------------------- FOOTER --------------------------------- */
+
+@media only screen and (min-width:600px)
+{
+    .galeria{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    
+    }
+    .seccion{
+        flex-wrap: nowrap;
+    }
+    .seccion h3{
+        font-size: 15px;
+    }
+    .seccion{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+    .galeria{display: grid;
+    
+    grid-template-columns: repeat (3, 1fr) ;
+    }
+    .seccion h3{
+        font-size: 20px;
+    
+    }
+    .seccion p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    .seccion h3{
+        font-size: 20px;
+    }
+    .seccion p{
+        font-size: 12px;
+    }
+    }
