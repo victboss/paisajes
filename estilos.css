@@ -32,6 +32,21 @@ header{
 }
 header span{
     color: green;
+    text-shadow:2px 2px 5px black;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 header i{
     color: green;
